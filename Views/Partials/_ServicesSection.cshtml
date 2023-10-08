@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="services">
+    <div class="container">
+        <div class="title">@Model.Value("serviceTitle")</div>
+        <div class="boldtext">@Model.Value("serviceDescription")</div>
+        <div class="serviceboxes">
+            <div class="advicebox">
+                <div class="line"></div>
+                <div class="titlebox">@Model.Value("serviceAdviceTitle")</div>
+                <div class="ingress">@Model.Value("serviceAdviceDescription")</div>
+                <button class="clickbtn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="startupbox">
+                <div class="line"></div>
+                <div class="titlebox">@Model.Value("serviceStartupTitle")</div>
+                <div class="ingress">@Model.Value("serviceStartupDescription")</div>
+                <button class="clickbtn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="financialbox">
+                <div class="line"></div>
+                <div class="titlebox">@Model.Value("serviceFinancialTitle")</div>
+                <div class="ingress">@Model.Value("serviceFinancialDescription")</div>
+                <button class="clickbtn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="riskbox">
+                <div class="line"></div>
+                <div class="titlebox">@Model.Value("serviceRiskTitle")</div>
+                <div class="ingress">@Model.Value("serviceRiskDescription")</div>
+                <button class="clickbtn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <button class="browsebtn">@Model.Value("serviceButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+    </div>
+    <div class="effectimg">
+        <img src="./Images/background/background-lines-right.svg">
+    </div>
+</section>

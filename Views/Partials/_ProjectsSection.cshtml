@@ -1,0 +1,59 @@
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="projects">
+    <div class="container">
+        <div class="title">@Model.Value("projectTitle")</div>
+        <div class="boldtext">@Model.Value("projectIngress")</div>
+        <div class="ourprojects">
+            <div class="grow">
+                @{
+                    var projectGrowImage = Model.Value<MediaWithCrops>("projectGrowImage");
+                    if (projectGrowImage != null)
+                    {
+                        <img src="@projectGrowImage.MediaUrl()">
+                    }
+                }
+                <div class="growtitle">@Model.Value("projectGrowTitle")</div>
+                <div class="line"></div>
+                <button class="readmore">@Model.Value("projectGrowButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+            </div>
+            <div class="responsive">
+                @{
+                    var projectResponsiveImage = Model.Value<MediaWithCrops>("projectResponsiveImage");
+                    if (projectResponsiveImage != null)
+                    {
+                        <img src="@projectResponsiveImage.MediaUrl()">
+                    }
+                }
+                <div class="responsivetitle">@Model.Value("projectResponsiveTitle")</div>
+                <div class="line"></div>
+                <button class="readmore">@Model.Value("projectResponsiveButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+            </div>
+            <div class="educate">
+                @{
+                    var projectEducationImage = Model.Value<MediaWithCrops>("projectEducationImage");
+                    if (projectEducationImage != null)
+                    {
+                        <img src="@projectEducationImage.MediaUrl()">
+                    }
+                }
+                <div class="educatetitle">@Model.Value("projectEducationTitle")</div>
+                <div class="line"></div>
+                <button class="readmore">@Model.Value("projectEducationButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+            </div>
+            <div class="business">
+                @{
+                    var projectBuisnessImage = Model.Value<MediaWithCrops>("projectBuisnessImage");
+                    if (projectBuisnessImage != null)
+                    {
+                        <img src="@projectBuisnessImage.MediaUrl()">
+                    }
+                }
+                <div class="businesstitle">@Model.Value("projectBuisnessTitle")</div>
+                <div class="line"></div>
+                <button class="readmore">@Model.Value("projectBuisnessButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+            </div>
+        </div>
+        <button class="allprojectsbtn">@Model.Value("projectButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+    </div>
+</section>

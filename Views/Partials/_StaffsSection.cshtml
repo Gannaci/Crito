@@ -1,0 +1,64 @@
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="staffs">
+    <div class="container">
+        <div class="title">@Model.Value("staffTitle")</div>
+        <div class="textset">
+            <div class="boldtext">@Model.Value("staffDescription")</div>
+            <button class="browseteambtn">@Model.Value("staffButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+        </div>
+        <div class="staffboxes">
+            <div class="personone">
+                @{
+                    var kristineImage = Model.Value<MediaWithCrops>("staffKristineImage");
+                    if (kristineImage != null)
+                    {
+                        <img src="@kristineImage.MediaUrl()">
+                    }
+                }
+                <div class="titlename">@Model.Value("staffKristineNameText")</div>
+                <div class="ingress">@Model.Value("staffKristineJobText")</div>
+            </div>
+            <div class="persontwo">
+                @{
+                    var markImage = Model.Value<MediaWithCrops>("staffmarkImage");
+                    if (markImage != null)
+                    {
+                        <img src="@markImage.MediaUrl()">
+                    }
+                }
+                <div class="titlename">@Model.Value("staffMarkNameText")</div>
+                <div class="ingress">@Model.Value("staffMarkJobText")</div>
+            </div>
+            <div class="personthree">
+                @{
+                    var kimberlyImage = Model.Value<MediaWithCrops>("staffkimberlyImage");
+                    if (kimberlyImage != null)
+                    {
+                        <img src="@kimberlyImage.MediaUrl()">
+                    }
+                }
+                <div class="titlename">@Model.Value("staffKimberlyNameText")</div>
+                <div class="ingress">@Model.Value("staffKimberlyJobText")</div>
+            </div> 
+            <div class="personfour">
+                @{
+                    var justinImage = Model.Value<MediaWithCrops>("staffjustinImage");
+                    if (justinImage != null)
+                    {
+                        <img src="@justinImage.MediaUrl()">
+                    }
+                }
+                <div class="titlename">@Model.Value("staffJustinNameText")</div>
+                <div class="ingress">@Model.Value("staffJustinJobText")</div>
+            </div>
+        </div>
+        <div class="buttonset">
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+        </div>
+    </div>
+</section>

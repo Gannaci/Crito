@@ -1,0 +1,91 @@
+﻿@using Umbraco.Cms.Core.Models
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Article2>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout.cshtml";
+}
+@await Html.PartialAsync("_BreadcrumbSection")
+<section class="articlepage">
+    <div class="container">
+        <div class="title">@Model.Value("newsArticleTitle")</div>
+        <div class="undertext">
+            <div class="date">@Model.Value("newsArticleDate")</div>
+            <button class="smallbtn"></button>
+            <div class="tag">@Model.Value("newsArticleTag")</div>
+            <button class="smallbtn"></button>
+            <div class="poster">@Model.Value("newsArticlePoster")</div>
+        </div>
+        <div class="content">
+            <div class="leftsideinfo">
+                @{
+                    var article2Image = Model.Value<MediaWithCrops>("newsArticleImage");
+                    if (article2Image != null)
+                    {
+                        <img src="@article2Image.MediaUrl()">
+                    }
+                }
+                <div class="infotext">
+                    <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</h4>
+                    <h4>Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. uspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</h4>
+                    <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</h4>
+                    <h4>Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</h4>
+                </div>
+                <div class="bigtextset">
+                    <i class="fa-solid fa-quote-right fa-2xl"></i>
+                    <div class="bigtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
+                <div class="btntags">
+                    <button>Digitalization</button>
+                    <button>School</button>
+                    <button>IT</button>
+                    <button>Design</button>
+                    <button>Work</button>
+                    <button>Tech</button>
+                </div>
+            </div>
+            <div class="rightsideinfo">
+                <form action="https://www.example.com/search" method="get">
+                    <input type="text" id="search" name="q" style="font-family: FontAwesome;" placeholder="&#xF002; Type to search...">
+                </form>
+                <div class="recentpostboxes">
+                    <div class="title">Recent Posts</div>
+                    <div class="onepost">
+                        <div class="posttitle">How To Blow Through Capital At An Incredible Rate</div>
+                        <div class="postdate">Jan 14, 2020</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="onepost">
+                        <div class="posttitle">Design Studios That Everyone Should Know About? </div>
+                        <div class="postdate">Jan 14, 2020</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="onepost">
+                        <div class="posttitle">How did we get 1M+ visitors in 30 days without anything!</div>
+                        <div class="postdate">Jan 14, 2020</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="onepost">
+                        <div class="posttitle">Figma On Figma: How We Built Our Website Design System</div>
+                        <div class="postdate">Jan 14, 2020</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="categoriesbox">
+                    <div class="title">Categories</div>
+                    <div class="catergoriestexts">
+                        <h4>Technology -  20 Posts</h4>
+                        <h4>Freelancing  -  07 Posts</h4>
+                        <h4>Writing   -  16 Posts</h4>
+                        <h4>Marketing  -  11 Posts</h4>
+                        <h4>Business  -  35 Posts</h4>
+                        <h4>Education -  14 Posts</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@await Html.PartialAsync("_ArticleSection")

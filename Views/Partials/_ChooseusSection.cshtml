@@ -1,0 +1,50 @@
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="chooseus">
+    <div class="container">
+        <div class="leftside">
+            <div class="title">@Model.Value("chooseusTitle")</div>
+            <div class="boldtext">@Model.Value("chooseusDescription")</div>
+            <div class="process">
+                <button class="clickbtn"><i class="fa-regular fa-thumbs-up fa-xl"></i></button>
+                <div class="processtexts">
+                    <div class="texttitle">@Model.Value("chooseusProcessTitle")</div>
+                    <div class="ingress">@Model.Value("chooseusProcessDescription")</div>
+                </div>
+            </div>
+            <div class="strategic">
+                <button class="clickbtn"><i class="fa-regular fa-gem fa-xl"></i></i></button>
+                <div class="strategictexts">
+                    <div class="texttitle">@Model.Value("chooseusStrategicTitle")</div>
+                    <div class="ingress">@Model.Value("chooseusStrategicDescription")</div>
+                </div>
+            </div>
+            <div class="experience">
+                <button class="clickbtn"><i class="fa-sharp fa-light fa-chart-user fa-xl"></i></button>
+                <div class="experiencetexts">
+                    <div class="texttitle">@Model.Value("chooseusExperienceTitle")</div>
+                    <div class="ingress">@Model.Value("chooseusExperienceDescription")</div>
+                </div>
+            </div>
+            <div class="artificial">
+                <button class="clickbtn"><i class="fa-thin fa-head-side-gear fa-xl"></i></button>
+                <div class="artificialtexts">
+                    <div class="texttitle">@Model.Value("chooseusArtificialTitle")</div>
+                    <div class="ingress">@Model.Value("chooseusArtificialDescription")</div>
+                </div>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="image">
+                @{
+                var chooseusImage = Model.Value<MediaWithCrops>("chooseusImage");
+                if (chooseusImage != null)
+                {
+                    <img src="@chooseusImage.MediaUrl()">
+                }
+            }
+            </div>
+            <div class="backgroundbox"></div>
+        </div>
+    </div>
+</section>

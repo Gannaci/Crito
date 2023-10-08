@@ -1,0 +1,2205 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@200;300;400;500;600;700&display=swap");
+.wrapper {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+.menubar {
+  background-color: #F0EFE9;
+  height: 120px;
+}
+.menubar .container {
+  display: flex;
+  padding: 10px;
+}
+.menubar .container .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.menubar .container .menu {
+  width: 1500px;
+  margin-left: 50px;
+}
+.menubar .container .menu .highmenu {
+  display: flex;
+  justify-content: space-between;
+}
+.menubar .container .menu .highmenu .menuinfo {
+  gap: 80px;
+  display: flex;
+  align-items: center;
+  font-family: "Inter, sans-serif";
+  font-weight: 300;
+  font-size: 15px;
+  color: #191919;
+  opacity: 70%;
+}
+.menubar .container .menu .highmenu .menuinfo .menuinfoicon {
+  color: #191919;
+  text-decoration: none;
+}
+.menubar .container .menu .highmenu .menuinfo .vertical {
+  border-left: 2px solid #A4A4A4;
+  height: 20px;
+}
+.menubar .container .menu .highmenu .icons {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin-top: 8px;
+}
+.menubar .container .menu .highmenu .icons .menuicon {
+  color: #191919;
+  display: contents;
+  justify-content: end;
+}
+.menubar .container .menu .sideline {
+  height: 1px;
+  background-color: #A4A4A4;
+  margin-top: 15px;
+}
+.menubar .container .menu .topmenu {
+  justify-content: space-between;
+  display: flex;
+}
+.menubar .container .menu .topmenu .topmenu-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.menubar .container .menu .topmenu .topmenu-links .menulink {
+  color: #191919;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+}
+.menubar .container .menu .topmenu .topmenu-links .menulink:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 0.7em;
+  text-decoration-thickness: 3px;
+}
+.menubar .container .menu .topmenu .loginbtn {
+  color: #191919;
+  background-color: #F9D783;
+  height: 48px;
+  width: 122px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 6px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.showcase {
+  background-color: #F0EFE9;
+  height: 900px;
+  position: relative;
+}
+.showcase .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcase .container .showcasetext {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 150px;
+}
+.showcase .container .showcasetext .title {
+  font-size: 96px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  line-height: 1em;
+  width: 670px;
+}
+.showcase .container .showcasetext .ingress {
+  font-size: 20px;
+  font-family: "Inter, sans-serif";
+  font-weight: 400;
+  width: 600px;
+  margin-top: 15px;
+}
+.showcase .container .showcasetext .consultbtn {
+  color: #191919;
+  background-color: #F9D783;
+  height: 56px;
+  width: 208px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 6px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 100px;
+}
+.showcase .container .showcasetext .learnbtn {
+  color: #191919;
+  background-color: #F0EFE9;
+  height: 56px;
+  width: 180px;
+  border-radius: 25px;
+  margin-top: 6px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+}
+.showcase .container .showcaseimage {
+  width: 653px;
+  height: 726px;
+  margin-top: 175px;
+}
+.showcase .effectimage {
+  position: absolute;
+  top: 690px;
+}
+
+.sponsors .container .images {
+  margin-top: 50px;
+  height: 88px;
+  width: 225px;
+  display: flex;
+  gap: 50px;
+}
+
+.featured {
+  margin-top: 50px;
+}
+.featured .container .infobox {
+  display: flex;
+  height: 600px;
+  width: 1320px;
+  border: 1px solid black;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.featured .container .infobox .leftsideinfo {
+  flex: 1;
+  margin-left: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.featured .container .infobox .leftsideinfo .infotext {
+  margin-top: 100px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  color: #F94D1C;
+}
+.featured .container .infobox .leftsideinfo .title {
+  margin-top: 10px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  max-width: 420px;
+  line-height: 1.1;
+}
+.featured .container .infobox .leftsideinfo .learnbtn {
+  color: #191919;
+  background-color: #F9D783;
+  height: 56px;
+  width: 460px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 45px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+}
+.featured .container .infobox .rightsideinfo {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  margin-top: 100px;
+}
+.featured .container .infobox .rightsideinfo .advice i {
+  font-size: 40px;
+}
+.featured .container .infobox .rightsideinfo .advice .title {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.featured .container .infobox .rightsideinfo .advice .ingress {
+  margin-top: 10px;
+  font-family: "Inter, sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+}
+.featured .container .infobox .rightsideinfo .startup i {
+  font-size: 40px;
+}
+.featured .container .infobox .rightsideinfo .startup .title {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.featured .container .infobox .rightsideinfo .startup .ingress {
+  margin-top: 10px;
+  font-family: "Inter, sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+}
+.featured .container .infobox .rightsideinfo .financial {
+  margin-top: 15px;
+}
+.featured .container .infobox .rightsideinfo .financial i {
+  font-size: 40px;
+}
+.featured .container .infobox .rightsideinfo .financial .title {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.featured .container .infobox .rightsideinfo .financial .ingress {
+  margin-top: 10px;
+  font-family: "Inter, sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+}
+.featured .container .infobox .rightsideinfo .risk {
+  margin-top: 15px;
+}
+.featured .container .infobox .rightsideinfo .risk i {
+  font-size: 40px;
+}
+.featured .container .infobox .rightsideinfo .risk .title {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.featured .container .infobox .rightsideinfo .risk .ingress {
+  margin-top: 10px;
+  font-family: "Inter, sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+}
+
+.about {
+  margin-top: 150px;
+}
+.about .container .aboutbox {
+  height: 615px;
+  width: 1320px;
+}
+.about .container .aboutbox .aboutcontent {
+  display: flex;
+  justify-content: space-between;
+}
+.about .container .aboutbox .aboutcontent .aboutleft {
+  position: relative;
+}
+.about .container .aboutbox .aboutcontent .aboutleft img {
+  height: 615px;
+  width: 533px;
+  margin-left: 60px;
+}
+.about .container .aboutbox .aboutcontent .aboutleft .effect {
+  width: 200px;
+  position: absolute;
+  bottom: 165px;
+  left: 0;
+}
+.about .container .aboutbox .aboutcontent .aboutleft .infobox {
+  height: 180px;
+  width: 368px;
+  background-color: #BEEBFF;
+  position: absolute;
+  top: 400px;
+  left: 0;
+}
+.about .container .aboutbox .aboutcontent .aboutleft .infobox .title {
+  margin-top: 30px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.about .container .aboutbox .aboutcontent .aboutleft .infobox .title a {
+  color: #F94D1C;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+}
+.about .container .aboutbox .aboutcontent .aboutleft .infobox .ingress {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.about .container .aboutbox .aboutcontent .aboutright {
+  margin-left: 200px;
+}
+.about .container .aboutbox .aboutcontent .aboutright .topinfo {
+  color: #F94D1C;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+}
+.about .container .aboutbox .aboutcontent .aboutright .title {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  max-width: 420px;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+.about .container .aboutbox .aboutcontent .aboutright .ingresstop {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 450px;
+}
+.about .container .aboutbox .aboutcontent .aboutright .ingressbottom {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 30px;
+  width: 450px;
+}
+.about .container .aboutbox .aboutcontent .aboutright .btns {
+  display: flex;
+  margin-top: 120px;
+  justify-content: center;
+  margin-right: 70px;
+  align-items: center;
+}
+.about .container .aboutbox .aboutcontent .aboutright .btns .learnbtn {
+  color: #FFFFFF;
+  background-color: #191919;
+  height: 56px;
+  width: 180px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 70px;
+}
+.about .container .aboutbox .aboutcontent .aboutright .btns .videobtn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
+.about .container .aboutbox .aboutcontent .aboutright .btns .introtext {
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.services {
+  background-color: #F0EFE9;
+  height: 1200px;
+  position: relative;
+  margin-top: 100px;
+}
+.services .container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.services .container .title {
+  padding-top: 150px;
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+  text-align: start;
+}
+.services .container .boldtext {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  width: 500px;
+  line-height: 1;
+  margin-top: 20px;
+  text-align: start;
+}
+.services .container .serviceboxes {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  text-align: start;
+}
+.services .container .serviceboxes .advicebox {
+  height: 333px;
+  width: 308px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .advicebox:hover {
+  background-color: #F9D783;
+}
+.services .container .serviceboxes .advicebox .line {
+  width: 39px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.services .container .serviceboxes .advicebox .titlebox {
+  font-family: "Dm-sans, sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.services .container .serviceboxes .advicebox .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 200px;
+}
+.services .container .serviceboxes .advicebox .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #191919;
+  border: none;
+  margin-top: 70px;
+  align-self: flex-end;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .advicebox .clickbtn:hover {
+  background-color: #FFFFFF;
+}
+.services .container .serviceboxes .advicebox .clickbtn i {
+  color: #FFFFFF;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .advicebox .clickbtn i:hover {
+  color: #191919;
+}
+.services .container .serviceboxes .startupbox {
+  height: 333px;
+  width: 308px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .startupbox:hover {
+  background-color: #F9D783;
+}
+.services .container .serviceboxes .startupbox .line {
+  width: 39px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.services .container .serviceboxes .startupbox .titlebox {
+  font-family: "Dm-sans, sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.services .container .serviceboxes .startupbox .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 200px;
+}
+.services .container .serviceboxes .startupbox .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #191919;
+  border: none;
+  margin-top: 70px;
+  align-self: flex-end;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .startupbox .clickbtn:hover {
+  background-color: #FFFFFF;
+}
+.services .container .serviceboxes .startupbox .clickbtn i {
+  color: #FFFFFF;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .startupbox .clickbtn i:hover {
+  color: #191919;
+}
+.services .container .serviceboxes .financialbox {
+  height: 333px;
+  width: 308px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .financialbox:hover {
+  background-color: #F9D783;
+}
+.services .container .serviceboxes .financialbox .line {
+  width: 39px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.services .container .serviceboxes .financialbox .titlebox {
+  font-family: "Dm-sans, sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.services .container .serviceboxes .financialbox .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 200px;
+}
+.services .container .serviceboxes .financialbox .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #191919;
+  border: none;
+  margin-top: 70px;
+  align-self: flex-end;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .financialbox .clickbtn:hover {
+  background-color: #FFFFFF;
+}
+.services .container .serviceboxes .financialbox .clickbtn i {
+  color: #FFFFFF;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .financialbox .clickbtn i:hover {
+  color: #191919;
+}
+.services .container .serviceboxes .riskbox {
+  height: 333px;
+  width: 308px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .riskbox:hover {
+  background-color: #F9D783;
+}
+.services .container .serviceboxes .riskbox .line {
+  width: 39px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.services .container .serviceboxes .riskbox .titlebox {
+  font-family: "Dm-sans, sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.services .container .serviceboxes .riskbox .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 200px;
+}
+.services .container .serviceboxes .riskbox .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #191919;
+  border: none;
+  margin-top: 70px;
+  align-self: flex-end;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .riskbox .clickbtn:hover {
+  background-color: #FFFFFF;
+}
+.services .container .serviceboxes .riskbox .clickbtn i {
+  color: #FFFFFF;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+.services .container .serviceboxes .riskbox .clickbtn i:hover {
+  color: #191919;
+}
+.services .container .browsebtn {
+  color: #191919;
+  background-color: #F0EFE9;
+  height: 56px;
+  width: 221px;
+  border-radius: 25px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.services .container .browsebtn:hover {
+  background-color: #F9D783;
+}
+.services .container .browsebtn i {
+  margin-left: 20px;
+}
+.services .effectimg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.chooseus {
+  height: 690px;
+  max-width: 1920px;
+}
+.chooseus .container {
+  display: flex;
+  justify-content: space-between;
+}
+.chooseus .container .leftside {
+  display: block;
+  margin-top: 70px;
+}
+.chooseus .container .leftside .title {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F94D1C;
+}
+.chooseus .container .leftside .boldtext {
+  font-size: 45px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  width: 400px;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+.chooseus .container .leftside .process {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.chooseus .container .leftside .process .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+}
+.chooseus .container .leftside .process .processtexts {
+  display: block;
+  margin-left: 40px;
+}
+.chooseus .container .leftside .process .processtexts .texttitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.chooseus .container .leftside .process .processtexts .ingress {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+}
+.chooseus .container .leftside .strategic {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.chooseus .container .leftside .strategic .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+}
+.chooseus .container .leftside .strategic .strategictexts {
+  display: block;
+  margin-left: 40px;
+}
+.chooseus .container .leftside .strategic .strategictexts .texttitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.chooseus .container .leftside .strategic .strategictexts .ingress {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+}
+.chooseus .container .leftside .experience {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.chooseus .container .leftside .experience .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+}
+.chooseus .container .leftside .experience .experiencetexts {
+  display: block;
+  margin-left: 40px;
+}
+.chooseus .container .leftside .experience .experiencetexts .texttitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.chooseus .container .leftside .experience .experiencetexts .ingress {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+}
+.chooseus .container .leftside .artificial {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.chooseus .container .leftside .artificial .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+}
+.chooseus .container .leftside .artificial .artificialtexts {
+  display: block;
+  margin-left: 40px;
+}
+.chooseus .container .leftside .artificial .artificialtexts .texttitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.chooseus .container .leftside .artificial .artificialtexts .ingress {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+}
+.chooseus .container .rightside {
+  position: relative;
+  margin-top: 70px;
+}
+.chooseus .container .rightside .image {
+  position: absolute;
+}
+.chooseus .container .rightside .image img {
+  width: 645px;
+  height: 450px;
+  margin-left: 300px;
+}
+.chooseus .container .rightside .backgroundbox {
+  max-width: 1057px;
+  width: 1057px;
+  height: 425px;
+  background-color: #F0EFE9;
+  margin-left: 142px;
+  margin-top: 120px;
+}
+
+.projects .container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+}
+.projects .container .title {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F94D1C;
+  text-align: center;
+}
+.projects .container .boldtext {
+  font-size: 45px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 20px;
+  text-align: center;
+}
+.projects .container .ourprojects {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.projects .container .ourprojects .grow {
+  display: block;
+  text-align: start;
+}
+.projects .container .ourprojects .grow img {
+  width: 645px;
+  height: 311px;
+}
+.projects .container .ourprojects .grow .growtitle {
+  font-size: 22px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  margin-top: 30px;
+}
+.projects .container .ourprojects .grow .line {
+  height: 1px;
+  width: 645px;
+  background-color: #F0EFE9;
+  margin-top: 10px;
+}
+.projects .container .ourprojects .grow .readmore {
+  margin-top: 20px;
+  margin-left: 500px;
+  width: 124px;
+  height: 44px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.projects .container .ourprojects .responsive {
+  display: block;
+  text-align: start;
+}
+.projects .container .ourprojects .responsive img {
+  width: 645px;
+  height: 311px;
+}
+.projects .container .ourprojects .responsive .responsivetitle {
+  font-size: 22px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  margin-top: 30px;
+}
+.projects .container .ourprojects .responsive .line {
+  height: 1px;
+  width: 645px;
+  background-color: #F0EFE9;
+  margin-top: 10px;
+}
+.projects .container .ourprojects .responsive .readmore {
+  margin-top: 20px;
+  margin-left: 500px;
+  width: 124px;
+  height: 44px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.projects .container .ourprojects .educate {
+  display: block;
+  text-align: start;
+}
+.projects .container .ourprojects .educate img {
+  width: 645px;
+  height: 311px;
+}
+.projects .container .ourprojects .educate .educatetitle {
+  font-size: 22px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  margin-top: 30px;
+}
+.projects .container .ourprojects .educate .line {
+  height: 1px;
+  width: 645px;
+  background-color: #F0EFE9;
+  margin-top: 10px;
+}
+.projects .container .ourprojects .educate .readmore {
+  margin-top: 20px;
+  margin-left: 500px;
+  width: 124px;
+  height: 44px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.projects .container .ourprojects .business {
+  display: block;
+  text-align: start;
+}
+.projects .container .ourprojects .business img {
+  width: 645px;
+  height: 311px;
+}
+.projects .container .ourprojects .business .businesstitle {
+  font-size: 22px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  margin-top: 30px;
+}
+.projects .container .ourprojects .business .line {
+  height: 1px;
+  width: 645px;
+  background-color: #F0EFE9;
+  margin-top: 10px;
+}
+.projects .container .ourprojects .business .readmore {
+  margin-top: 20px;
+  margin-left: 500px;
+  width: 124px;
+  height: 44px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.projects .container .allprojectsbtn {
+  color: #FFFFFF;
+  background-color: #191919;
+  height: 56px;
+  width: 221px;
+  border-radius: 25px;
+  border: none;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.projects .container .allprojectsbtn:hover {
+  background-color: #F9D783;
+}
+.projects .container .allprojectsbtn i {
+  margin-left: 10px;
+}
+
+.staffs {
+  background-color: #F0D082;
+  margin-top: 150px;
+  height: 1000px;
+}
+.staffs .container .title {
+  padding-top: 150px;
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+  text-align: start;
+}
+.staffs .container .textset {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.staffs .container .textset .boldtext {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1;
+  text-align: start;
+}
+.staffs .container .textset .browseteambtn {
+  color: #191919;
+  background-color: #F0EFE9;
+  height: 56px;
+  width: 221px;
+  border-radius: 25px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.staffs .container .textset .browseteambtn:hover {
+  background-color: #F9D783;
+  border: 1px solid black;
+}
+.staffs .container .staffboxes {
+  display: flex;
+  height: 507px;
+  gap: 20px;
+  margin-top: 100px;
+}
+.staffs .container .staffboxes .personone img {
+  height: 420px;
+  width: 308px;
+}
+.staffs .container .staffboxes .personone .titlename {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.staffs .container .staffboxes .personone .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+.staffs .container .staffboxes .persontwo img {
+  height: 420px;
+  width: 308px;
+}
+.staffs .container .staffboxes .persontwo .titlename {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.staffs .container .staffboxes .persontwo .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+.staffs .container .staffboxes .personthree img {
+  height: 420px;
+  width: 308px;
+}
+.staffs .container .staffboxes .personthree .titlename {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.staffs .container .staffboxes .personthree .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+.staffs .container .staffboxes .personfour img {
+  height: 420px;
+  width: 308px;
+}
+.staffs .container .staffboxes .personfour .titlename {
+  margin-top: 20px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.staffs .container .staffboxes .personfour .ingress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+.staffs .container .buttonset {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #F0EFE9;
+}
+.staffs .container .buttonset .smallround {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  border: none;
+  background-color: #A4A4A4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.staffs .container .buttonset .smallround:hover {
+  background-color: #191919;
+}
+
+.reviews {
+  background-color: #F0D082;
+  height: 1000px;
+  margin-top: -25px;
+  padding-top: 50px;
+}
+.reviews .container {
+  display: flex;
+  height: 1070px;
+}
+.reviews .container .box {
+  width: 1520px;
+  height: 887px;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  display: flex;
+}
+.reviews .container .box .title {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+  text-align: center;
+  padding-top: 130px;
+}
+.reviews .container .box .boldtext {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+}
+.reviews .container .box .boxinfo {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 50px;
+}
+.reviews .container .box .boxinfo .customerbox {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+}
+.reviews .container .box .boxinfo .customerbox .stars i {
+  color: #F94D1C;
+}
+.reviews .container .box .boxinfo .customerbox .description {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  width: 340px;
+  margin-top: 20px;
+}
+.reviews .container .box .boxinfo .customerbox .customerinfo {
+  display: flex;
+  margin-top: 50px;
+}
+.reviews .container .box .boxinfo .customerbox .customerinfo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.reviews .container .box .boxinfo .customerbox .customerinfo .textinfo {
+  display: block;
+  margin-left: 30px;
+}
+.reviews .container .box .boxinfo .customerbox .customerinfo .name {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.reviews .container .box .boxinfo .customerbox .customerinfo .job {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+}
+.reviews .container .box .boxinfo .customerbox2 {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+}
+.reviews .container .box .boxinfo .customerbox2 .stars i {
+  color: #F94D1C;
+}
+.reviews .container .box .boxinfo .customerbox2 .description {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  width: 340px;
+  margin-top: 20px;
+}
+.reviews .container .box .boxinfo .customerbox2 .customerinfo {
+  display: flex;
+  margin-top: 50px;
+}
+.reviews .container .box .boxinfo .customerbox2 .customerinfo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.reviews .container .box .boxinfo .customerbox2 .customerinfo .textinfo {
+  display: block;
+  margin-left: 30px;
+}
+.reviews .container .box .boxinfo .customerbox2 .customerinfo .name {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.reviews .container .box .boxinfo .customerbox2 .customerinfo .job {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+}
+.reviews .container .box .boxinfo .customerbox3 {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+}
+.reviews .container .box .boxinfo .customerbox3 .stars i {
+  color: #F94D1C;
+}
+.reviews .container .box .boxinfo .customerbox3 .description {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  width: 340px;
+  margin-top: 20px;
+}
+.reviews .container .box .boxinfo .customerbox3 .customerinfo {
+  display: flex;
+  margin-top: 50px;
+}
+.reviews .container .box .boxinfo .customerbox3 .customerinfo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.reviews .container .box .boxinfo .customerbox3 .customerinfo .textinfo {
+  display: block;
+  margin-left: 30px;
+}
+.reviews .container .box .boxinfo .customerbox3 .customerinfo .name {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.reviews .container .box .boxinfo .customerbox3 .customerinfo .job {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+}
+.reviews .container .reviewsbtn {
+  color: #FFFFFF;
+  background-color: #191919;
+  border: none;
+  height: 56px;
+  width: 221px;
+  border-radius: 25px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 100px;
+  align-self: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.reviews .container .reviewsbtn:hover {
+  background-color: #F9D783;
+}
+
+.articles {
+  margin-top: 100px;
+  height: 700px;
+}
+.articles .container .title {
+  font-family: "Inter, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+}
+.articles .container .textset {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.articles .container .textset .boldtext {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1;
+  text-align: start;
+}
+.articles .container .textset .articlesbtn {
+  color: #191919;
+  background-color: #F0EFE9;
+  height: 56px;
+  width: 221px;
+  border-radius: 25px;
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.articles .container .textset .articlesbtn:hover {
+  background-color: #F9D783;
+  border: 1px solid black;
+}
+.articles .container .content {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.articles .container .content .classroom {
+  position: relative;
+}
+.articles .container .content .classroom img {
+  width: 420px;
+  height: 230px;
+}
+.articles .container .content .classroom .datebox {
+  width: 56px;
+  height: 64px;
+  background-color: #F0D082;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.articles .container .content .classroom .datebox .date {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  height: 25px;
+}
+.articles .container .content .classroom .datebox .month {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.articles .container .content .classroom .classheader {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 20px;
+}
+.articles .container .content .classroom .classtitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  width: 260px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.articles .container .content .classroom .classdes {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 370px;
+  margin-top: 10px;
+}
+.articles .container .content .chatgpt {
+  position: relative;
+}
+.articles .container .content .chatgpt img {
+  width: 420px;
+  height: 230px;
+}
+.articles .container .content .chatgpt .datebox {
+  width: 56px;
+  height: 64px;
+  background-color: #F0D082;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.articles .container .content .chatgpt .datebox .date {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  height: 25px;
+}
+.articles .container .content .chatgpt .datebox .month {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.articles .container .content .chatgpt .chatgptheader {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 20px;
+}
+.articles .container .content .chatgpt .chatgpttitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  width: 260px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.articles .container .content .chatgpt .chatgptdes {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 370px;
+  margin-top: 10px;
+}
+.articles .container .content .design {
+  position: relative;
+}
+.articles .container .content .design img {
+  width: 420px;
+  height: 230px;
+}
+.articles .container .content .design .datebox {
+  width: 56px;
+  height: 64px;
+  background-color: #F0D082;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.articles .container .content .design .datebox .date {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  height: 25px;
+}
+.articles .container .content .design .datebox .month {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.articles .container .content .design .designheader {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 20px;
+}
+.articles .container .content .design .designtitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  width: 260px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.articles .container .content .design .designdes {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 370px;
+  margin-top: 10px;
+}
+.articles .container .buttonset {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #F0EFE9;
+}
+.articles .container .buttonset .smallround {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  border: none;
+  background-color: #A4A4A4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.articles .container .buttonset .smallround:hover {
+  background-color: #191919;
+}
+
+.subscribe-section {
+  background-color: #F0EFE9;
+  height: 300px;
+  position: relative;
+  margin-top: 100px;
+}
+.subscribe-section .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    gap: 240px;
+    
+}
+.subscribe-section .container .subscribe {
+  font-size: 45px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+}
+.subscribe-section .container .subscribe-form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.subscribe-section .container .subscribe-form input {
+  border: none;
+  height: 56px;
+  width: 300px;
+  text-align: center;
+  border-radius: 25px;
+}
+.subscribe-section .container .subscribe-form button {
+  color: #191919;
+  background-color: #F9D783;
+  height: 56px;
+  width: 171px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+}
+.subscribe-section .container .subscribe-form button i {
+  margin-left: 10px;
+}
+.subscribe-section .imagebackground img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottommenu {
+  background-color: #0E1021;
+  height: 350px;
+  position: relative;
+}
+.bottommenu .container {
+  color: #A4A4A4;
+}
+.bottommenu .container .menuinfo {
+  display: flex;
+  padding-top: 80px;
+  gap: 100px;
+}
+.bottommenu .container .menuinfo .logoinfo .textinfo {
+  width: 300px;
+  margin-top: 30px;
+}
+.bottommenu .container .companyinfo .title {
+  color: #FFFFFF;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.bottommenu .container .companyinfo h3 {
+  margin-top: 20px;
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+}
+.bottommenu .container .helpinfo .title {
+  color: #FFFFFF;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.bottommenu .container .helpinfo h3 {
+  margin-top: 20px;
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+}
+.bottommenu .container .resourcesinfo .title {
+  color: #FFFFFF;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.bottommenu .container .resourcesinfo h3 {
+  margin-top: 20px;
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+}
+.bottommenu .container .linkinfo .title {
+  color: #FFFFFF;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.bottommenu .container .linkinfo h3 {
+  margin-top: 20px;
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+}
+.bottommenu .imageclass img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.copyright {
+  background-color: #0E1021;
+  height: 60px;
+}
+.copyright .line {
+  height: 1px;
+  background-color: #A4A4A4;
+}
+.copyright .container {
+  color: #A4A4A4;
+}
+.copyright .container .textinfo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright .container .textinfo .copytext {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.copyright .container .textinfo .icons {
+  display: flex;
+  gap: 10px;
+}
+.copyright .container .textinfo .icons .menuicon {
+  color: #A4A4A4;
+}
+
+.topshowcase {
+  background-color: #F0EFE9;
+  height: 300px;
+  position: relative;
+}
+.topshowcase .container .textmenu .menu {
+  font-family: "Inter, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.topshowcase .container .textmenu .title {
+  font-size: 56px;
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+}
+.topshowcase .effectimage img {
+  position: absolute;
+  bottom: 0;
+}
+
+.newsmenu {
+  height: 1500px;
+}
+.newsmenu .container .textset {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.newsmenu .container .textset .boldtext {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1;
+  text-align: start;
+}
+.newsmenu .container .content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.newsmenu .container .content .classroom {
+  position: relative;
+}
+.newsmenu .container .content .classroom img {
+  width: 420px;
+  height: 230px;
+}
+.newsmenu .container .content .classroom .datebox {
+  width: 56px;
+  height: 64px;
+  background-color: #F0D082;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.newsmenu .container .content .classroom .datebox .date {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  height: 25px;
+}
+.newsmenu .container .content .classroom .datebox .month {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.newsmenu .container .content .classroom .classheader {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 20px;
+}
+.newsmenu .container .content .classroom .classtitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  width: 260px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.newsmenu .container .content .classroom .classdes {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 370px;
+  margin-top: 10px;
+}
+.newsmenu .container .content .chatgpt {
+  position: relative;
+}
+.newsmenu .container .content .chatgpt img {
+  width: 420px;
+  height: 230px;
+}
+.newsmenu .container .content .chatgpt .datebox {
+  width: 56px;
+  height: 64px;
+  background-color: #F0D082;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.newsmenu .container .content .chatgpt .datebox .date {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  height: 25px;
+}
+.newsmenu .container .content .chatgpt .datebox .month {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.newsmenu .container .content .chatgpt .chatgptheader {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 20px;
+}
+.newsmenu .container .content .chatgpt .chatgpttitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  width: 260px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.newsmenu .container .content .chatgpt .chatgptdes {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 370px;
+  margin-top: 10px;
+}
+.newsmenu .container .content .design {
+  position: relative;
+}
+.newsmenu .container .content .design img {
+  width: 420px;
+  height: 230px;
+}
+.newsmenu .container .content .design .datebox {
+  width: 56px;
+  height: 64px;
+  background-color: #F0D082;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.newsmenu .container .content .design .datebox .date {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  height: 25px;
+}
+.newsmenu .container .content .design .datebox .month {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.newsmenu .container .content .design .designheader {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 20px;
+}
+.newsmenu .container .content .design .designtitle {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+  width: 260px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.newsmenu .container .content .design .designdes {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 370px;
+  margin-top: 10px;
+}
+.newsmenu .container .buttonset {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #FFFFFF;
+}
+.newsmenu .container .buttonset .smallround {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #F0EFE9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.newsmenu .container .buttonset .smallround:hover {
+  background-color: #191919;
+}
+
+.aboutus {
+  margin-top: 50px;
+}
+.aboutus .container .infoboxes {
+  display: flex;
+  gap: 30px;
+}
+.aboutus .container .infoboxes .visitus {
+  height: 205px;
+  width: 420px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.aboutus .container .infoboxes .visitus .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  color: #FFFFFF;
+  background-color: #191919;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+  margin-bottom: 30px;
+}
+.aboutus .container .infoboxes .visitus .texts {
+  display: block;
+}
+.aboutus .container .infoboxes .visitus .texts .title {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.aboutus .container .infoboxes .visitus .texts .adress {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 10px;
+}
+.aboutus .container .infoboxes .visitus .texts .postcode {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.aboutus .container .infoboxes .callus {
+  height: 205px;
+  width: 420px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.aboutus .container .infoboxes .callus .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  color: #FFFFFF;
+  background-color: #191919;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+  margin-bottom: 30px;
+}
+.aboutus .container .infoboxes .callus .texts {
+  display: block;
+}
+.aboutus .container .infoboxes .callus .texts .title {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.aboutus .container .infoboxes .callus .texts .phonenm {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 10px;
+}
+.aboutus .container .infoboxes .callus .texts .phonenm2 {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+.aboutus .container .infoboxes .emailus {
+  height: 205px;
+  width: 420px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.aboutus .container .infoboxes .emailus .clickbtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  color: #FFFFFF;
+  background-color: #191919;
+  Cursor: text !important;
+  Text-Decoration: None !important;
+  margin-bottom: 30px;
+}
+.aboutus .container .infoboxes .emailus .texts {
+  display: block;
+}
+.aboutus .container .infoboxes .emailus .texts .title {
+  font-family: "Dm-sans, sans-serif";
+  font-weight: 700;
+  font-size: 22px;
+}
+.aboutus .container .infoboxes .emailus .texts .email {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  margin-top: 10px;
+}
+.aboutus .container .infoboxes .emailus .texts .email2 {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+}
+
+.commentsection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commentsection .container .commentbody {
+  margin-top: 50px;
+  padding-top: 10px;
+  height: 600px;
+  width: 1140px;
+  background-color: #F0EFE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commentsection .container .commentbody .title {
+  width: 450px;
+  font-size: 45px;
+  margin-left: 310px;
+}
+.commentsection .container .commentbody .form-group {
+  margin-right: 20px;
+  color: #636363;
+  font-size: 16px;
+}
+.commentsection .container .commentbody label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 520px;
+}
+.commentsection .container .commentbody input[type=text],
+.commentsection .container .commentbody input[type=email],
+.commentsection .container .commentbody textarea {
+  width: 1021px;
+  height: 56px;
+  background-color: #FAFAFA;
+  border: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding-left: 40px;
+}
+.commentsection .container .commentbody textarea {
+  width: 1021px;
+  height: 100px;
+  background-color: #FAFAFA;
+  border: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.commentsection .container .commentbody button[type=submit] {
+  color: #191919;
+  background-color: #F9D783;
+  width: 1021px;
+  height: 56px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 50px;
+  font-family: "Inter, sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+}
+.mapsection .google-map {
+  width: 100%;
+  height: 800px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.articlepage .container .title {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Dm-sans, sans-serif";
+  width: 550px;
+  margin-top: 50px;
+}
+.articlepage .container .undertext {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  display: flex;
+}
+.articlepage .container .undertext .smallbtn {
+  height: 10px;
+  width: 10px;
+  background-color: #F0D082;
+  border: none;
+  border-radius: 100%;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.articlepage .container .content {
+  display: flex;
+  gap: 150px;
+}
+.articlepage .container .content .leftsideinfo img {
+  height: 500px;
+  width: 758px;
+  margin-top: 50px;
+}
+.articlepage .container .content .leftsideinfo .infotext h4 {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 758px;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+.articlepage .container .content .leftsideinfo .bigtextset {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.articlepage .container .content .leftsideinfo .bigtextset i {
+  margin-top: 20px;
+}
+.articlepage .container .content .leftsideinfo .bigtextset .bigtext {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Dm-sans, sans-serif";
+  width: 700px;
+}
+.articlepage .container .content .leftsideinfo .description {
+  font-family: "Inter, sans-serif";
+  font-size: 16px;
+  width: 758px;
+  margin-top: 30px;
+}
+.articlepage .container .content .leftsideinfo .btntags {
+  display: flex;
+  gap: 15px;
+}
+.articlepage .container .content .leftsideinfo .btntags button {
+  background-color: #F0EFE9;
+  color: #191919;
+  border-radius: 25px;
+  height: 40px;
+  width: 116px;
+  border: none;
+  margin-top: 30px;
+}
+.articlepage .container .content .rightsideinfo form input {
+  width: 420px;
+  height: 56px;
+  background-color: #F0EFE9;
+  border-radius: 25px;
+  border: none;
+  padding-left: 20px;
+}
+.articlepage .container .content .rightsideinfo .recentpostboxes {
+  height: 554px;
+  width: 420px;
+  border: 2px solid #F0EFE9;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.articlepage .container .content .rightsideinfo .recentpostboxes .title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Dm-sans, sans-serif";
+}
+.articlepage .container .content .rightsideinfo .recentpostboxes .onepost {
+  margin-top: 10px;
+}
+.articlepage .container .content .rightsideinfo .recentpostboxes .onepost .posttitle {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Dm-sans, sans-serif";
+  width: 300px;
+  margin-top: 10px;
+}
+.articlepage .container .content .rightsideinfo .recentpostboxes .onepost .postdate {
+  font-family: "Inter, sans-serif";
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.articlepage .container .content .rightsideinfo .recentpostboxes .onepost .line {
+  height: 1px;
+  background-color: #F0EFE9;
+  width: 350px;
+  margin-top: 5px;
+}
+.articlepage .container .content .rightsideinfo .categoriesbox {
+  height: 325px;
+  width: 420px;
+  border: 2px solid #F0EFE9;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.articlepage .container .content .rightsideinfo .categoriesbox .title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Dm-sans, sans-serif";
+}
+.articlepage .container .content .rightsideinfo .categoriesbox .catergoriestexts {
+  margin-top: 10px;
+}
+.articlepage .container .content .rightsideinfo .categoriesbox .catergoriestexts h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Dm-sans, sans-serif";
+}/*# sourceMappingURL=style.css.map */

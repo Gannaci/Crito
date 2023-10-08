@@ -1,0 +1,36 @@
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="about">
+    <div class="container">
+        <div class="aboutbox">
+            <div class="aboutcontent">
+                <div class="aboutleft">
+                    @{
+                        var aboutusImage = Model.Value<MediaWithCrops>("aboutusImage");
+                        if (aboutusImage != null)
+                        {
+                            <img src="@aboutusImage.MediaUrl()" alt="@Model.Value("showcaseTitle")">
+                        }
+                    }
+                    <img class="effect" src="./Images/background/background-wavy-lines.svg">
+                    <div class="infobox">
+                        <div class="title">@Model.Value("aboutusNameText") <a>@Model.Value("aboutusJobText")</a></div>
+                        <div class="ingress">@Model.Value("aboutusDescription")</div>
+                    </div>
+                    
+                </div>
+                <div class="aboutright">
+                    <div class="topinfo">@Model.Value("aboutusTopinfo")</div>
+                    <div class="title">@Model.Value("aboutusTitle")</div>
+                    <div class="ingresstop">@Model.Value("aboutusIngressTop")</div>
+                    <div class="ingressbottom">@Model.Value("aboutusIngressBottom")</div>
+                    <div class="btns">
+                        <button class="learnbtn">@Model.Value("aboutusButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+                        <button class="videobtn"><i class="fa-solid fa-play"></i></button>
+                        <div class="introtext">@Model.Value("aboutusVideoText")</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

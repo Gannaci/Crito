@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="topshowcase">
+    <div class="container">
+        <div class="textmenu">
+            <div class="menu">
+                <div class="hometext">@Model.Value("breadcrumbHomeText")</div>
+                <div class="newstext">@Model.Value("breadcrumbCurrentPageText")</div>
+            </div>
+            <div class="title">@Model.Value("breadcrumbTitle")</div>
+        </div>
+    </div>
+    <div class="effectimage">
+        <img src="/Images/Rectangle 607.svg">
+    </div>
+</section>

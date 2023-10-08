@@ -1,0 +1,82 @@
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="reviews">
+    <div class="container">
+        <div class="box">
+            <div class="title">@Model.Value("reviewTitle")</div>
+            <div class="boldtext">@Model.Value("reviewDescription")</div>
+            <div class="boxinfo">
+                <div class="customerbox">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="description">@Model.Value("reviewOneDescription")</div>
+                    <div class="customerinfo">
+                        @{
+                            var reviewOneImage = Model.Value<MediaWithCrops>("reviewOneImage");
+                            if (reviewOneImage != null)
+                            {
+                                <img src="@reviewOneImage.MediaUrl()" alt="@Model.Value("showcaseTitle")">
+                            }
+                        }
+                        <div class="textinfo">
+                            <div class="name">@Model.Value("reviewOneNameText")</div>
+                            <div class="job">@Model.Value("reviewOneJobText")</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customerbox2">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="description">@Model.Value("reviewTwoDescription")</div>
+                    <div class="customerinfo">
+                       @{
+                            var reviewTwoImage = Model.Value<MediaWithCrops>("reviewTwoImage");
+                            if (reviewTwoImage != null)
+                            {
+                                <img src="@reviewTwoImage.MediaUrl()" alt="@Model.Value("showcaseTitle")">
+                            }
+                        }
+                        <div class="textinfo">
+                            <div class="name">@Model.Value("reviewTwoNameText")</div>
+                            <div class="job">@Model.Value("reviewTwoJobText")</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customerbox3">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="description">@Model.Value("reviewThreeDescription")</div>
+                    <div class="customerinfo">
+                       @{
+                            var reviewThreeImage = Model.Value<MediaWithCrops>("reviewThreeImage");
+                            if (reviewThreeImage != null)
+                            {
+                                <img src="@reviewThreeImage.MediaUrl()" alt="@Model.Value("showcaseTitle")">
+                            }
+                        }
+                        <div class="textinfo">
+                            <div class="name">@Model.Value("reviewThreeNameText")</div>
+                            <div class="job">@Model.Value("reviewThreeJobText")</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="reviewsbtn">@Model.Value("reviewButtonText")<i class="fa-solid fa-arrow-up-right"></i></button>
+        </div>
+    </div>
+</section>

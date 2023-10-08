@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<div class="commentsection">
+    <div class="container">
+        <div class="commentbody">
+            <form asp-controller="Contact" asp-action="Index" method="post" novalidate class="commentform">
+                <div asp-validation-summary="ModelOnly"></div>
+                <h2 class="title">Leave us a message for any information.</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input asp-for="" type="text" placeholder="Name*" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="" type="email" placeholder="Email*" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <textarea asp-for="" id="message" placeholder="Your Message*" name="message" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit">Send Massage <i class="fa-solid fa-arrow-up-right"></i></button>
+            </form>
+        </div>
+    </div>
+</div>

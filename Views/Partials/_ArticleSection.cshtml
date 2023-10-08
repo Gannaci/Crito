@@ -1,0 +1,76 @@
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="articles">
+    <div class="container">
+        <div class="title">@Model.Value("articleTitle")</div>
+        <div class="textset">
+            <div class="boldtext">@Model.Value("articleDescription")</div>
+            <button class="articlesbtn">@Model.Value("articleButtonText") <i class="fa-solid fa-arrow-up-right"></i></button>
+        </div>
+        <div class="content">
+            <div class="classroom">
+                
+            @{
+                var classroomImage = Model.Value<MediaWithCrops>("articleOneImage");
+                if (classroomImage != null)
+                {
+                    <a href="/news/articles/article1">
+                    <img src="@classroomImage.MediaUrl()">
+                    </a>
+                }
+            }
+                <div class="datebox">
+                    <div class="date">@Model.Value("articleOneDate")</div>
+                    <div class="month">@Model.Value("articleOneMonth")</div>
+                </div>
+                <div class="classheader">@Model.Value("articleOneTag")</div>
+                <div class="classtitle">@Model.Value("articleOneTitle")</div>
+                <div class="classdes">@Model.Value("articleOneDescription")</div>
+            </div>
+            <div class="chatgpt">
+            @{
+                var article2Image = Model.Value<MediaWithCrops>("articleTwoImage");
+                if (article2Image != null)
+                {
+                     
+                    <a href="/news/articles/article2">
+                        <img src="@article2Image.MediaUrl()" alt="Article 2 Image">
+                    </a>
+                }
+            }
+                <div class="datebox">
+                    <div class="date">@Model.Value("articleTwoDate")</div>
+                    <div class="month">@Model.Value("articleTwoMonth")</div>
+                </div>
+                <div class="chatgptheader">@Model.Value("articleTwoTag")</div>
+                <div class="chatgpttitle">@Model.Value("articleTwoTitle")</div>
+                <div class="chatgptdes">@Model.Value("articleTwoDescription")</div>
+            </div>
+            <div class="design">
+            @{
+                var article3Image = Model.Value<MediaWithCrops>("articleThreeImage");
+                if (article3Image != null)
+                {
+                    <a href="/news/articles/article3">
+                    <img src="@article3Image.MediaUrl()">
+                    </a>
+                }
+            }
+                <div class="datebox">
+                    <div class="date">@Model.Value("articleThreeDate")</div>
+                    <div class="month">@Model.Value("articleThreeMonth")</div>
+                </div>
+                <div class="designheader">@Model.Value("articleThreeTag")</div>
+                <div class="designtitle">@Model.Value("articleThreeTitle")</div>
+                <div class="designdes">@Model.Value("articleThreeDescription")</div>
+            </div>
+        </div>
+        <div class="buttonset">
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+            <button class="smallround"></button>
+        </div>
+    </div>
+</section>

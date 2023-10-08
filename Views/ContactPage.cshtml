@@ -1,0 +1,84 @@
+﻿@using Crito.Model;
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "_Layout.cshtml";
+
+    var contactForm = new ContactForm();
+}
+@await Html.PartialAsync("_BreadcrumbSection")
+<section class="aboutus">
+    <div class="container">
+        <div class="infoboxes">
+            <div class="visitus">
+                <button class="clickbtn"><i class="fa-regular fa-location-dot"></i></button>
+                <div class="texts">
+                    <div class="title">Visit us</div>
+                    <div class="adress">Sveavägen 31</div>
+                    <div class="postcode">111 34 STOCKHOLM</div>
+                </div>
+            </div>
+            <div class="callus">
+                <button class="clickbtn"><i class="fa-regular fa-phone"></i></button>
+                <div class="texts">
+                    <div class="title">Call us</div>
+                    <div class="phonenm">+46 (8) 121 470 50</div>
+                    <div class="phonenm2">+46 (8) 121 470 51</div>
+                </div>
+            </div>
+            <div class="emailus">
+                <button class="clickbtn"><i class="fa-regular fa-envelope"></i></button>
+                <div class="texts">
+                    <div class="title">Email us</div>
+                    <div class="email">info@crito.com</div>
+                    <div class="email2">support@crito.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="commentsection">
+    <div class="container">
+        <div class="commentbody">
+
+            @if (TempData["Message"] != null)
+            {
+                <div class="alert alert-info">
+                    @TempData["Message"].ToString()
+                </div>
+            }
+
+            @using (Html.BeginUmbracoForm("Index", "Contact", FormMethod.Post))
+            {
+                <div asp-validation-summary="All"></div>
+                <h2 class="title">Leave us a message for any information.</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input asp-for="@contactForm.Name" type="text" placeholder="Name">
+                        <span class="text-danger" data-valmsg-for="Name"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="@contactForm.Email" type="email" placeholder="Email">
+                        <span class="text-danger" data-valmsg-for="Email"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <textarea asp-for="@contactForm.Message" id="message" placeholder="Your Message*"></textarea>
+                        <span class="text-danger" data-valmsg-for="Message"></span>
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+            }
+        </div>
+    </div>
+</div>
+@await Html.PartialAsync("_MapSection")
+<script src="/scripts/script.js"></script>
+
